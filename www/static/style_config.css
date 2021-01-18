@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+:root {
+    --main-color: rgb(22, 160, 133);
+    --main-second-color: rgb(52, 73, 94);
+    --button-text-color: rgb(250, 250, 250);
+}
+
+#container {
+    margin: 10px auto 0 auto;
+    border: 1px solid var(--main-color);
+    padding: 5px;
+    width: 450px;
+}
+
+h1 {
+    color: var(--main-color);
+    text-align: center;
+}
+
+#config {
+    font-size: 1.1em;
+    border: 1px solid var(--main-second-color);
+}
+
+button {
+    background-color: var(--main-color);
+    color: var(--button-text-color);
+
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#error {
+    display: none;
+    color: red;
+}
+
+#error.visible {
+    display: block;
+}
